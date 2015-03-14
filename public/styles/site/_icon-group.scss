@@ -1,0 +1,31 @@
+.icon-group {
+  position: relative;
+  list-style-type: none;
+  padding: 20px;
+}
+.icon-group-item {
+  @include opacity(0.5);
+}
+.icon-group-item:hover {
+  @include opacity(1);
+  transition: 1s ease;
+}
+.icon-group.icon-group--right {
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+.icon-group .icon-group-item {
+  display: inline;
+}
+.icon-group-link {
+  text-decoration: none;
+  font-size: $icon-group-link-font-size;
+}
+.icon-group-link--icon:hover {
+  text-decoration: none;
+  border:0 !important;
+}
+.icon-group--rating {
+  padding: 0;
+}

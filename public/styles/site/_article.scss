@@ -1,0 +1,38 @@
+// Articles have two primary derivatives default and preview
+.article {
+  display: block;
+}
+
+// Headers
+.article-default .article-header,
+.article-preview .article-header {
+  // Preview related
+  border-bottom: $article-header-border-size $article-header-border-color solid;
+  text-transform: uppercase;
+  font-size: $article-header-font-size;
+  padding-bottom: $article-header-padding-bottom;
+  margin-bottom: $article-header-margin-bottom;
+  transition: 1s ease;
+}
+
+// Preview Article
+.article-preview:hover {
+  transition: 1s ease;
+  @include opacity(0.5);
+  @include animatePushDown(10px)
+}
+.article-preview > .article-header > h3 {
+  margin-top:0;
+  font-size: $article-preview-title-font-size;
+}
+.article--less-relevance {
+  cursor: url('../images/icon-arrow-left.svg'), pointer;
+}
+.article--more-relevance {
+  cursor: url('../images/icon-arrow-right.svg'), pointer;
+}
+
+// Primary Article Display
+.article-display .article-header {
+  margin-bottom: 2*$article-header-margin-bottom;
+}

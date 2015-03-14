@@ -1,0 +1,25 @@
+#body {
+	margin-top: 100px;
+}
+
+#header {
+  left:0;
+  right:0;
+  top:0;
+  height:100px;
+  position: fixed;
+  zoom:1;
+  z-index: 1040;
+}
+
+#footer {
+  height: 100px;
+  padding:20px;
+
+}
+
+.gallery-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

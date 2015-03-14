@@ -1,0 +1,111 @@
+extends ../layouts/default
+
+block content
+	.section.section-default.section--article
+		.container
+			.row
+				.col-xs-12
+					//img(src='/images/logo.svg', width='160')
+					.article.article-display.article--unread
+						.article-header
+							h3.article-title Containerwelt
+							h4.article-subline.article--author Dr. Alexander Klose
+						.article-body
+							p.paragraph.paragraph-lead.paragraph--content Wenn wir den Container als eine Art Flucht- oder Endpunkt moderner Architektur in das Visier nehmen, soll es einerseits darum gehen, die Voraussetzungen herauszuarbeiten, unter denen der Container im Zuge des  20. Jahrhunderts zur „Architektur“ werden konnte; vor diesem Hintergrund soll die Frage gestellt werden, ob und wie sich eine architektonische Gestaltung des Containers entwickeln lässt: ist der Container überhaupt geeignet als Grundmodul von Gestaltung menschlichen Lebensraums? Andererseits geht es darum, die ikonischen oder piktogrammatischen Qualitäten des Containers zu erkennen und zu benennen.
+							p.paragraph.paragraph-default.paragraph--content Es soll gefragt werden, was eine Containerarchitektur, in ihren verwendeten Materialien, in ihrer Objektqualität als Box und  in ihren sichtbaren Elementen des technischen Transportsystems, aussagt: Welche Geschichten erzählt sie, welche Form von Sozialität inszeniert sie, welche Mythen transportiert sie, Gegenstand welcher Visionen ist sie? Die Ergebnisse dieser Untersuchungen der Semantiken des Containers könnten ebenfalls zum Ausgangspunkt neuer Gestaltungsentwürfe werden.
+						.article-footer
+							ul.icon-group.icon-group--rating.icon-group--archive
+								if user
+									li.icon-group-item
+										a.icon-group-link.icon-group-link--icon(href='#collection/articleId')
+											img(src='/images/icon-favorite.svg', width='72')
+										a.icon-group-link.icon-group-link--text(href='#collection/articleId') Add to Collection
+								li.icon-group-item
+									a.icon-group-link.icon-group-link--icon(href='#recommend/articleId')
+										img(src='/images/icon-heart.svg', width='72')
+									a.icon-group-link.icon-group-link--text(href='#recommend/articleId') Recommend to friend
+								li.icon-group-item
+									a.icon-group-link.icon-group-link--icon(href='#download/articleId/pdf')
+										img(src='/images/icon-download.svg', width='72')
+									a.icon-group-link.icon-group-link--text(href='#download/articleId/pdf') PDF
+								li.icon-group-item
+									a.icon-group-link.icon-group-link--text(href='#download/articleId/pdf') EPub
+
+	.section.section-default.section--further-readings
+		.container
+			.row
+				.col-xs-8
+					.section-header
+						h5.section-title Further Readings
+					.row
+						.col-xs-6
+							.article.article-preview.article--less-relevance
+								.article-header
+									h3.article-title Less Relevant Article
+								.article-body
+									p.paragraph.paragraph-default.paragraph--excerpt The Lorem Ipsum excerpt is written here, and should possibly extend to a nice summary around 160 chars.
+									p.paragraph.paragraph-default.paragraph--excerpt The Lorem Ipsum excerpt is written here, and should possibly extend to a nice summary around 160 chars.
+								.article-footer
+
+						.col-xs-6
+							.article.article-preview.article--more-relevance
+								.article-header
+									h3.article-title More Relevant Article
+								.article-body
+									p.paragraph.paragraph-default.paragraph--excerpt The Lorem Ipsum excerpt is written here, and should possibly extend to a nice summary around 160 chars.
+									p.paragraph.paragraph-default.paragraph--excerpt The Lorem Ipsum excerpt is written here, and should possibly extend to a nice summary around 160 chars.
+								.article-footer
+
+
+				.col-xs-4
+					.section-header
+						h5.section-title English paperback via MIT PRESS
+					.advert.advert-default
+						.advert-header
+							h3.advert-title Available in English
+							img.advert-img(src='/images/container-principle-cover-mit.jpg', class='img-responsive advert-img advert-img--responsive')
+
+
+
+	.section.section-default.section--article.section--most-relevant-article
+		.container
+			.row
+				.col-xs-12
+					.section-header
+						h5.section-title Most Relevant Article
+
+			.row
+				.col-xs-12
+					//img(src='/images/logo.svg', width='160')
+					.article.article-display.article--unread
+						.article-header
+							h3.article-title Containerwelt
+							h4.article-subline.article--author Dr. Alexander Klose
+						.article-body
+							p.paragraph.paragraph-lead.paragraph--content Wenn wir den Container als eine Art Flucht- oder Endpunkt moderner Architektur in das Visier nehmen, soll es einerseits darum gehen, die Voraussetzungen herauszuarbeiten, unter denen der Container im Zuge des  20. Jahrhunderts zur „Architektur“ werden konnte; vor diesem Hintergrund soll die Frage gestellt werden, ob und wie sich eine architektonische Gestaltung des Containers entwickeln lässt: ist der Container überhaupt geeignet als Grundmodul von Gestaltung menschlichen Lebensraums? Andererseits geht es darum, die ikonischen oder piktogrammatischen Qualitäten des Containers zu erkennen und zu benennen.
+							p.paragraph.paragraph-default.paragraph--content Es soll gefragt werden, was eine Containerarchitektur, in ihren verwendeten Materialien, in ihrer Objektqualität als Box und  in ihren sichtbaren Elementen des technischen Transportsystems, aussagt: Welche Geschichten erzählt sie, welche Form von Sozialität inszeniert sie, welche Mythen transportiert sie, Gegenstand welcher Visionen ist sie? Die Ergebnisse dieser Untersuchungen der Semantiken des Containers könnten ebenfalls zum Ausgangspunkt neuer Gestaltungsentwürfe werden.
+						.article-footer
+							ul.icon-group.icon-group--rating.icon-group--archive
+								if user
+									li.icon-group-item
+										a.icon-group-link.icon-group-link--icon(href='#collection/articleId')
+											img(src='/images/icon-favorite.svg', width='72')
+										a.icon-group-link.icon-group-link--text(href='#collection/articleId') Add to Collection
+								li.icon-group-item
+									a.icon-group-link.icon-group-link--icon(href='#recommend/articleId')
+										img(src='/images/icon-heart.svg', width='72')
+									a.icon-group-link.icon-group-link--text(href='#recommend/articleId') Recommend to friend
+								li.icon-group-item
+									a.icon-group-link.icon-group-link--icon(href='#download/articleId/pdf')
+										img(src='/images/icon-download.svg', width='72')
+									a.icon-group-link.icon-group-link--text(href='#download/articleId/pdf') PDF
+								li.icon-group-item
+									a.icon-group-link.icon-group-link--text(href='#download/articleId/pdf') EPub
+
+	.section.section-default.section--article.section--loading
+		.container
+			.row
+				.col-xs-12.text-center
+					.section-loader
+						img(src='/images/loading.svg', width='72')
+						h4 Loading most relevant article

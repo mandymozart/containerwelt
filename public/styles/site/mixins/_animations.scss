@@ -1,0 +1,13 @@
+// Opacity
+
+@mixin animatePushDown($dY) {
+  -moz-transform: scale(1) rotate(0deg) translate(0px, $dY) skew(0deg, 0deg);
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, $dY) skew(0deg, 0deg);
+  -o-transform: scale(1) rotate(0deg) translate(0px, $dY) skew(0deg, 0deg);
+  -ms-transform: scale(1) rotate(0deg) translate(0px, $dY) skew(0deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, $dY) skew(0deg, 0deg);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; /* linear */
+}

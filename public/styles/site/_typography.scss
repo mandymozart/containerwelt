@@ -1,0 +1,65 @@
+a {
+  color: $link-color;
+  text-decoration: none !important;
+  -o-transition:border .2s ease-out, margin 2s ease-in;
+  -ms-transition:border .2s ease-out, margin 2s ease-in;
+  -moz-transition:border .2s ease-out, margin 2s ease-in;
+  -webkit-transition:border .2s ease-out, margin 2s ease-in;
+  /* ...and now for the proper property */
+  transition:border .2s ease-out, margin 2s ease-in;
+}
+
+a:hover {
+  border-bottom: 2px solid red;
+  margin-bottom: -2px;
+  color: #000;
+}
+
+h1,h2,h3,h4,h5,h6,a,li,td,th {
+  font-family: 'Questrial', sans-serif !important;
+  //text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+p {
+  font-family: 'Old Standard TT', serif;
+  text-transform: normal;
+  letter-spacing: 0.07em;
+  font-size: 20px;
+}
+
+
+/* Headline pattern
+ *
+ * uneven - headline
+ * even - subline
+ * additionally all should be enclosed in $element-header tag
+ * $element-header.subline available too
+ */
+h1,h2 {
+  // Page related
+
+}
+
+h3 {
+
+}
+h4 {
+  // Article related
+  // Preview related
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+h5 {
+
+}
+h6 {
+  // Preview related
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}

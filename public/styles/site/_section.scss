@@ -1,0 +1,21 @@
+.section {
+  display:block;
+  padding-bottom: 18px;
+}
+.section-header {
+  // Preview related
+  border-bottom: 3px #000 solid;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  margin-bottom: 18px;
+}
+.section-title {
+  font-size: $section-title-font-size;
+  margin:0;
+}
+.section--further-readings {
+  background: url('../images/background-horizon.jpeg') fixed center top;
+  background-size: cover;
+}
