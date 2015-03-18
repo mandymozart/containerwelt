@@ -5,10 +5,11 @@
 }
 .icon-group-item {
   @include opacity(0.5);
+  @include transition(all .5 ease-out)
 }
 .icon-group-item:hover {
   @include opacity(1);
-  transition: 1s ease;
+  @include transition(all .2s ease-in);
 }
 .icon-group.icon-group--right {
   right: 0;
@@ -22,9 +23,17 @@
   text-decoration: none;
   font-size: $icon-group-link-font-size;
 }
+.icon-group-link--icon {
+  padding-top: 0;
+  margin-bottom: 0;
+  @include transition(all .3s ease-out)
+}
 .icon-group-link--icon:hover {
   text-decoration: none;
   border:0 !important;
+  padding-top: 5px;
+  margin-bottom: -5px;
+  @include transition(all .3s ease-out)
 }
 .icon-group--rating {
   padding: 0;

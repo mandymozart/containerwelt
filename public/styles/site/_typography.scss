@@ -1,18 +1,21 @@
 a {
+  outline:0;
+  border-bottom: 0px solid red;
+  margin-bottom: 0;
   color: $link-color;
   text-decoration: none !important;
-  -o-transition:border .2s ease-out, margin 2s ease-in;
-  -ms-transition:border .2s ease-out, margin 2s ease-in;
-  -moz-transition:border .2s ease-out, margin 2s ease-in;
-  -webkit-transition:border .2s ease-out, margin 2s ease-in;
-  /* ...and now for the proper property */
-  transition:border .2s ease-out, margin 2s ease-in;
+  @include transition(all .2s ease-out)
 }
 
 a:hover {
+  outline:0;
   border-bottom: 2px solid red;
   margin-bottom: -2px;
   color: #000;
+  @include transition(all .2s ease-in)
+}
+a:focus {
+  outline:0;
 }
 
 h1,h2,h3,h4,h5,h6,a,li,td,th {

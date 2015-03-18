@@ -1,6 +1,7 @@
 // Articles have two primary derivatives default and preview
 .article {
   display: block;
+  @include transition(all 0.3s ease);
 }
 
 // Headers
@@ -12,14 +13,13 @@
   font-size: $article-header-font-size;
   padding-bottom: $article-header-padding-bottom;
   margin-bottom: $article-header-margin-bottom;
-  transition: 1s ease;
 }
 
 // Preview Article
 .article-preview:hover {
-  transition: 1s ease;
+  margin-top: 15px;
   @include opacity(0.5);
-  @include animatePushDown(10px)
+  @include transition(all 0.15s ease);
 }
 .article-preview > .article-header > h3 {
   margin-top:0;
