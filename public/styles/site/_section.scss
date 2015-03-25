@@ -15,7 +15,9 @@
   font-size: $section-title-font-size;
   margin:0;
 }
-.section--further-readings {
+.section--loading {
+  marign-top: 100px;
+  marign-bottom: 60px;
   background: url('../images/background-horizon.jpeg') fixed center top;
   background-size: cover;
 }

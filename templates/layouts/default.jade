@@ -44,17 +44,21 @@ html
 					a.icon-group-link.icon-group-link--icon(href='#info', data-toggle='modal', data-target='#infoModal')
 						img(src='/images/icon-info.svg', width='72')
 				li.icon-group-item
-					span#activeArticle.status.status-active-article Reading now: Containerwelt - Intro
+					span#activeArticle.status.status-active-article
+						block reading
 
 			ul.icon-group.icon-group--right
+				//- li.icon-group-item
+					a.icon-group-link.icon-group-link--icon(href='#random')
+						img(src='/images/icon-pills.svg', width='72')
 				if user
 					if user.canAccessKeystone
 						li.icon-group-item
 							a.icon-group-link.icon-group-link--icon(href='/keystone')
-								img(src='/images/icon-tools.svg', width='72')
+								img(src='/images/icon-settings.svg', width='72')
 					li.icon-group-item
 						a.icon-group-link.icon-group-link--icon(href='/keystone/signout')
-							img(src='/images/icon-signout.svg', width='72')
+							img(src='/images/icon-checkout.svg', width='72')
 				else
 					li.icon-group-item
 						a.icon-group-link.icon-group-link--icon(href='/keystone/signin')
@@ -78,7 +82,7 @@ html
 			block content
 
 		//- FOOTER
-		#footer: div(role="navigation")
+		//- #footer: div(role="navigation")
 			.container
 				.row
 					.col-xs-12.text-align
@@ -103,19 +107,17 @@ html
 							br
 							Boeckhstr. 34, 10967 Berlin
 							p Email: twistlock@containerwelt.info
+							each link in navLinks
+								span(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
 							hr
 							.paragraph-meta.paragraph-meta--credits
-								h5 Credits
+								h4 Credits
 								p Crafted by:&nbsp;
 									a(href='http://www.wearepictures.com',target='_blank') WAP
 								p Icons:&nbsp;
 									a(href='http://thenounproject.com/artworkbean',target='_blank') Baabullah Hasan
-
-				.modal-footer
-					ul.nav.nav-stacked.text-center
-						li.nav-header Menu
-						each link in navLinks
-							li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+							hr
+							block categories
 
 		//- JAVASCRIPT
 

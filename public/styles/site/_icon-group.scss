@@ -26,6 +26,7 @@
 .icon-group-link--icon {
   padding-top: 0;
   margin-bottom: 0;
+  margin-right: 5px;
   @include transition(all .3s ease-out)
 }
 .icon-group-link--icon:hover {
