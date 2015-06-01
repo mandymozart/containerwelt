@@ -11,8 +11,10 @@ mixin post(post)
 		.article-body
 			if post.image.exists
 				img(src=post._.image.fit(160,160)).article-img.img-responsive.pull-right
-			p.paragraph.paragraph-lead.paragraph--content #{post.content.brief}
-			p.paragraph.paragraph-default.paragraph--content #{post.content.extended}
+			p.paragraph.paragraph-lead.paragraph--content
+				!= post.content.brief
+			p.paragraph.paragraph-default.paragraph--content
+				!= post.content.extended
 		.article-footer
 			p.article-meta Posted
 				if post.publishedDate
